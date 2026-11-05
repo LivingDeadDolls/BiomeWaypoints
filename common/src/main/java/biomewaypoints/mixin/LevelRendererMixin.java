@@ -17,8 +17,8 @@ abstract class LevelRendererMixin {
      */
     @Inject(method = "finalizeGizmoCollection", at = @At("HEAD"))
     private void biomewaypoints$borderLines(CallbackInfo ci) {
-        try (Gizmos.TemporaryCollection ignored = ((LevelRenderer) (Object) this).collectPerFrameRenderThreadGizmos()) {
-            BorderLines.frame(Minecraft.getInstance().gameRenderer.mainCamera().position());
+        try (Gizmos.TemporaryCollection ignored = ((LevelRenderer) (Object) this).collectPerFrameGizmos()) {
+            BorderLines.frame(Minecraft.getInstance().gameRenderer.getMainCamera().position());
         }
     }
 }

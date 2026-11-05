@@ -65,7 +65,6 @@ final class BiomeIcons {
             Map.entry("mushroom_fields", Items.RED_MUSHROOM),
             Map.entry("dripstone_caves", Items.POINTED_DRIPSTONE),
             Map.entry("lush_caves", Items.GLOW_BERRIES),
-            Map.entry("sulfur_caves", Items.SULFUR),
             Map.entry("deep_dark", Items.SCULK),
             Map.entry("nether_wastes", Items.NETHERRACK),
             Map.entry("soul_sand_valley", Items.SOUL_SAND),
