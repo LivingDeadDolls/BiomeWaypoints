@@ -135,7 +135,7 @@ public final class BiomeWaypointsConfig {
     /** The game's own biomes, worked out once (making the game's registries takes a while). */
     private static synchronized List<Identifier> gameBiomes() {
         if (gameBiomes == null) {
-            gameBiomes = VanillaRegistries.createWorldLookup().lookupOrThrow(Registries.BIOME).listElementIds().map(ResourceKey::identifier).toList();
+            gameBiomes = VanillaRegistries.createLookup().lookupOrThrow(Registries.BIOME).listElementIds().map(ResourceKey::identifier).toList();
         }
         return gameBiomes;
     }
